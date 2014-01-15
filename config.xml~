@@ -22,6 +22,6 @@
 
   <gap:plugin name="org.apache.cordova.globalization" />
 
-  <preference name="phonegap-version" value="2.9.0" />
+  <preference name="phonegap-version" value="3.0.0" />
 	
 </widget>
