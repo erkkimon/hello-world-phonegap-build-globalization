@@ -21,8 +21,6 @@
   </gap:platforms>
 
   <gap:plugin name="org.apache.cordova.globalization" version="0.1.0" />
-  <gap:plugin name="org.apache.cordova.battery-status" />
-  <gap:plugin name="org.apache.cordova.network-information" />
 
   <preference name="phonegap-version" value="2.9.0" />
 	
