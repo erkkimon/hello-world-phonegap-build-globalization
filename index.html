@@ -1,18 +1,30 @@
+
+
 <!DOCTYPE HTML>
 <html>
   <head>
     <title>Cordova</title>
     <script src="phonegap.js" type="text/javascript"></script>
     <script type="text/javascript" charset="utf-8">
-    function checkLanguage() {
-      navigator.globalization.getPreferredLanguage(
-        function (language) {alert('language: ' + language.value + '\n');},
-        function () {alert('Error getting language\n');}
+
+    function checkPattern() {
+      navigator.globalization.getNumberPattern(
+        function (pattern) {alert('pattern: ' + pattern.pattern + '\n' +
+                                  'symbol: ' + pattern.symbol + '\n' +
+                                  'fraction: ' + pattern.fraction + '\n' +
+                                  'rounding: ' + pattern.rounding + '\n' +
+                                  'positive: ' + pattern.positive + '\n' +
+                                  'negative: ' + pattern.negative + '\n' +
+                                  'decimal: ' + pattern.decimal + '\n' +
+                                  'grouping: ' + pattern.grouping);},
+        function () {alert('Error getting pattern\n');},
+        {type:'decimal'}
       );
     }
+
     </script>
   </head>
   <body>
-    <button onclick="checkLanguage()">Click for language</button>
+    <button onclick="checkPattern()">Click for pattern</button>
   </body>
 </html>
